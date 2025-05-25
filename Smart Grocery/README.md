@@ -1,0 +1,3 @@
+🧾 Smart Grocery List Generator from Receipt Scans
+This project is an AI-powered web application that helps users generate structured grocery lists by simply uploading a photo of a receipt. Built with a Python Flask backend and a clean HTML/CSS/JavaScript frontend, the app uses a simple OCR API (OCR.space) to extract text from receipt images. It then processes the text to identify and display grocery items in an organized list. This lightweight prototype demonstrates how AI and OCR can automate tedious tasks like manually writing down grocery lists, making everyday life a bit smarter and easier.
+

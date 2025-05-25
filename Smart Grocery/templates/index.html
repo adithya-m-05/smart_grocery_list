@@ -1,0 +1,67 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Grocery List Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1>🧾 Smart Grocery List Generator</h1>
+        <p class="subtext">Upload a receipt image and get a structured grocery list using AI!</p>
+
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="receipt" id="receipt" accept="image/*" required>
+            <button type="submit">Generate List</button>
+        </form>
+
+        <div id="loading" class="loading hidden">⏳ Processing...</div>
+
+        <div id="result" class="result-container hidden">
+            <h2>🛒 Extracted Items</h2>
+            <ul id="items-list"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Grocery List Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1>🧾 Smart Grocery List Generator</h1>
+        <p class="subtext">Upload a receipt image and get a structured grocery list using AI!</p>
+
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="receipt" id="receipt" accept="image/*" required>
+            <button type="submit">Generate List</button>
+        </form>
+
+        <div id="loading" class="loading hidden">⏳ Processing...</div>
+
+        <div id="result" class="result-container hidden">
+            <h2>🛒 Extracted Elements</h2>
+            <ul id="items-list"></ul>
+        </div>
+
+        <div id="recommendations" class="result-container hidden">
+            <h2>✨ Recommended Items</h2>
+            <ul id="recommendation-list"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
